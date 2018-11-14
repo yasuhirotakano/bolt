@@ -5,6 +5,9 @@
   content: "";
   clear: both;
 }
+img {
+  vertical-align: bottom;
+}
 .font-lato {
   font-family: lato;
 }
@@ -38,6 +41,33 @@
   background-color: #74cfae;
   cursor: default;
   text-decoration: none;
+  display: block;
+}
+.navMenu-button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  display: none;
+  position: fixed;
+  right: 18px;
+  top: 12px;
+  width: 45px;
+  height: 25px;
+}
+.navMenu-button-line {
+  position: absolute;
+  width: 30px;
+  border-bottom: solid 3px #ddd;
+  left: 18px;
+}
+.navMenu-button-line:nth-child(1) {
+  top: 12px;
+}
+.navMenu-button-line:nth-child(2) {
+  top: 21px;
+}
+.navMenu-button-line:nth-child(3) {
+  top: 30px;
 }
 #main {
   margin-top: 70px;
@@ -261,6 +291,16 @@
   .header-inner, .main-inner, .footer-inner{
     width: 97%;
   }
+  .bolt-icon {
+    float: none;
+  }
+  .menu-button {
+    margin: 11px -3% 0;
+    float: none;
+  }
+  .navMenu-button {
+    display: block;
+  }
   .bolt-title {
     padding: 160px 0 130px;
   }
@@ -297,8 +337,7 @@
     flex-direction: column;
   }
   .content-olw-button {
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 40px auto 0;
   }
   .content-os-skillsBox {
     flex-direction: column;

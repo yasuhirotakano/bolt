@@ -1,6 +1,5 @@
 $(function(){
-  $(".menu-button").css("display", "none");
   $(".navMenu-button").click(function(){
-    $(".menu-button").toggle();
+    $(".menu-button").toggleClass("menu-button-show");
   });
 });

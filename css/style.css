@@ -295,10 +295,11 @@ img {
     float: none;
   }
   .menu-button {
+    display: none;
     margin: 11px -3% 0;
     float: none;
   }
-  .navMenu-button {
+  .menu-button-show, .navMenu-button {
     display: block;
   }
   .bolt-title {
